@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class GameController1 : MonoBehaviour
+public class QuizGameController : MonoBehaviour
 {
     public SimpleObjectPool answerButtonObjectPool;
     public TextMeshProUGUI questionText;
@@ -81,7 +81,7 @@ public class GameController1 : MonoBehaviour
     {
         while (answerButtonGameObjects.Count > 0)
         {
-            answerButtonGameObjects.RemoveAll(0);
+            answerButtonGameObjects.RemoveAt(0);
         }
     }
 }

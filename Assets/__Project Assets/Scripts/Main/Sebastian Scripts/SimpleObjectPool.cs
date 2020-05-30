@@ -8,6 +8,10 @@ public class SimpleObjectPool : MonoBehaviour
    public Object prefab;
    private Stack<GameObject> innactiveInstances = new Stack<GameObject>();
 
+   /// <summary>
+   /// instance and add an add to it a PoolObject component
+   /// </summary>
+   /// <returns></returns>
    public GameObject GetObject()
    {
       GameObject spawnedGameObject;
@@ -27,6 +31,10 @@ public class SimpleObjectPool : MonoBehaviour
       return spawnedGameObject;
    }
 
+   /// <summary>
+   /// Return an object from the pool
+   /// </summary>
+   /// <param name="toReturn"></param>
    public void ReturnGameObject(GameObject toReturn)
    {
       PooledObject pooledObject = toReturn.GetComponent<PooledObject>();
@@ -43,6 +51,9 @@ public class SimpleObjectPool : MonoBehaviour
    }
 }
 
+/// <summary>
+/// pool properties
+/// </summary>
 public class PooledObject : MonoBehaviour
 {
    public SimpleObjectPool pool;

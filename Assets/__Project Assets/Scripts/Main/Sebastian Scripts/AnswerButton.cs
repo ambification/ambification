@@ -7,11 +7,11 @@ public class AnswerButton : MonoBehaviour
 {
     public TextMeshProUGUI answerText;
     private AnswerData answerData;
-    private GameController _gameController;
+    private QuizGameController _gameController;
 
     private void Start()
     {
-        _gameController = FindObjectOfType<GameController>();
+        _gameController = FindObjectOfType<QuizGameController>();
     }
 
     public void SetUp(AnswerData answerdata)
@@ -22,6 +22,6 @@ public class AnswerButton : MonoBehaviour
 
     public void HandleClick()
     {
-        _gameController(answerData.isCorrect);
+        _gameController.AnsweButtonClicked(answerData.isCorrect);
     }
 }
