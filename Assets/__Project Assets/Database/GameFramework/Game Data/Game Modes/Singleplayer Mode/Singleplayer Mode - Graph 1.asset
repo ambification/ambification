@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8fcda05fd50cc4b94290791a7b7474, type: 3}
+  m_Name: Singleplayer Mode - Graph 1
+  m_EditorClassIdentifier: 
+  serializedNodes:
+  - type: d4160.GameFramework.ChapterNode, d4160.GameFramework, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    jsonDatas: '{"GUID":"202764fd-d356-42c6-ba15-c3b5c9f79449","computeOrder":1,"canProcess":true,"position":{"serializedVersion":"2","x":-120.56522369384766,"y":134.6521759033203,"width":237.0,"height":248.0},"expanded":true,"debug":false,"nodeLock":false,"m_type":0,"m_title":"Level
+      1","m_description":"","m_worldScene":{"world":-1,"worldScene":0},"m_playOrCinematicScene":{"levelCategory":6,"levelScene":0},"m_tutorialActived":false,"m_unlocked":true,"m_chapterGraph":{"instanceID":0}}'
+  - type: d4160.GameFramework.ChapterNode, d4160.GameFramework, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    jsonDatas: '{"GUID":"5df238cc-c7b9-49cc-be03-a84d5aef4268","computeOrder":2,"canProcess":true,"position":{"serializedVersion":"2","x":183.65219116210938,"y":96.6956558227539,"width":237.0,"height":248.0},"expanded":false,"debug":false,"nodeLock":false,"m_type":0,"m_title":"Level
+      2","m_description":"","m_worldScene":{"world":-1,"worldScene":0},"m_playOrCinematicScene":{"levelCategory":6,"levelScene":0},"m_tutorialActived":false,"m_unlocked":true,"m_chapterGraph":{"instanceID":0}}'
+  edges:
+  - GUID: 94d7e79d-488e-451c-893b-9562aa1dbde9
+    owner: {fileID: 11400000}
+    inputNodeGUID: 5df238cc-c7b9-49cc-be03-a84d5aef4268
+    outputNodeGUID: 202764fd-d356-42c6-ba15-c3b5c9f79449
+    inputFieldName: input
+    outputFieldName: output
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  groups: []
+  stackNodes: []
+  pinnedElements: []
+  exposedParameters: []
+  position: {x: 162.4, y: -2.4, z: 0}
+  scale: {x: 1.15, y: 1.15, z: 1}
+  references:
+    version: 1
