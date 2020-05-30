@@ -1,18 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class AnswerButtons : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public TextMeshProUGUI answerText;
+    private AnswerData answerData;
+    private GameController _gameController;
+
+    private void Start()
     {
-        
+        _gameController = FindObjectOfType<GameController>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetUp(AnswerData answerdata)
     {
-        
+        answerData = answerdata;
+        answerText.text = answerData.answerText;
+    }
+
+    public void HandleClick()
+    {
+        _gameController.AnswerButtonClicked(answerData.isCorrect);
     }
 }
