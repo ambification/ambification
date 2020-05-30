@@ -22,6 +22,12 @@ EditorBuildSettings:
     path: Assets/__Project Assets/Scenes/Game Modes/Singleplayer Mode/Plays/Level
       1.unity
     guid: 48c18c9579ceb8a45ab27947f88127d2
+  - enabled: 1
+    path: Assets/__Project Assets/Scenes/Levels/Learning Path/TestSceneToLoad.unity
+    guid: 4299e3e3ad1708e4f8d39e659170dc41
+  - enabled: 1
+    path: Assets/__Project Assets/Scenes/Levels/Achievement/Achievement.unity
+    guid: 3349ece597382534bad2ae7a3f2c4885
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: f895e645e98231e4da25ca85aa98a8b0,
       type: 2}
