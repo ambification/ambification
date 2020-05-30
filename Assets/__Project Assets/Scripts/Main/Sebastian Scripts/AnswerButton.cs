@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class AnswerButtons : MonoBehaviour
+public class AnswerButton : MonoBehaviour
 {
     public TextMeshProUGUI answerText;
     private AnswerData answerData;
@@ -22,6 +22,6 @@ public class AnswerButtons : MonoBehaviour
 
     public void HandleClick()
     {
-        _gameController.AnswerButtonClicked(answerData.isCorrect);
+        _gameController(answerData.isCorrect);
     }
 }
