@@ -26,6 +26,7 @@ public class QuizGameController : MonoBehaviour
     {
         _dataController = FindObjectOfType<DataController>();
         _currentRoundData = _dataController.GetCourrentRoundData();
+        _questionPool = _currentRoundData.question;
         _timeRemaining = _currentRoundData.timeLimitInSeconds;
 
         _playerScore = 0;
@@ -41,10 +42,12 @@ public class QuizGameController : MonoBehaviour
         RemoveAnswerButtons();
         QuestionData questionData = _questionPool[_questionIndex];
         questionText.text = questionData.questionText;
+        
 
         for (int i = 0; i < questionData.answers.Length; i++)
         {
             GameObject answerButtonGameObject = answerButtonObjectPool.GetObject();
+            answerButtonGameObject.transform.SetParent(answerButtonParent);
             answerButtonGameObjects.Add(answerButtonGameObject);
             AnswerButton answerButton = answerButtonGameObject.GetComponent<AnswerButton>();
             answerButton.SetUp(questionData.answers[i]);
