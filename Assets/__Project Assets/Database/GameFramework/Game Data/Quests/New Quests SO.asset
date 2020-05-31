@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   achievementsSO: {fileID: 11400000, guid: e51d9c558f7954346b69339b556c5c9c, type: 2}
   quests:
-  - m_name: Manos limpias
+  - m_name: Lavarse las manos
     m_id: 0
     m_categories: []
     description: "Mantener las manos limpias es una de las medidas m\xE1s importantes
@@ -30,4 +30,136 @@ MonoBehaviour:
     - name: Lavarse las manos
       description: 
       score: 10
+    achievements: 
+  - m_name: Salir a correr
+    m_id: 0
+    m_categories: []
+    description: "Realizar ejercicio es bueno para la salud, adem\xE1s que hacer
+      ejercicio te da un boost de energ\xEDa."
+    tasks:
+    - name: Corre en los puntos indicados
+      description: 
+      score: 45
+    achievements: 
+  - m_name: Regar el jardin
+    m_id: 0
+    m_categories: []
+    description: Cuidar de tu jardin es excelente para empezar a contribuir con el
+      medio ambiente.
+    tasks:
+    - name: Busca una regadera
+      description: 
+      score: 45
+    - name: Ve a tu jardin
+      description: 
+      score: 45
+    - name: Riega las plantas
+      description: 
+      score: 45
+    achievements: 
+  - m_name: Recoge la basura de tu casa
+    m_id: 0
+    m_categories: []
+    description: Mantener tu hogar limpio es necesario para el cuidado propio asi
+      como el del medio ambiente.
+    tasks:
+    - name: Busca la basura en tu casa
+      description: 
+      score: 45
+    - name: Recoge la basura
+      description: 
+      score: 45
+    - name: Bota la basura en el tacho
+      description: 
+      score: 45
+    achievements: 
+  - m_name: Abona las plantas
+    m_id: 0
+    m_categories: []
+    description: Abonar las plantas sirve para que estas crezcan mejor y puedan desarrollarse
+      bien, de esta manera contribuyendo al medio ambiente mediante reciclaje.
+    tasks:
+    - name: Recoge la cascara de banana
+      description: 
+      score: 45
+    - name: Ve a tu jardin
+      description: 
+      score: 45
+    - name: Usa la cascara de banana como abono
+      description: 
+      score: 45
+    achievements: 
+  - m_name: Recicla botellas
+    m_id: 0
+    m_categories: []
+    description: Reciclar es una de las mejores estrategias para contribuir con el
+      cuidado del medio ambiente.
+    tasks:
+    - name: Busca botellas en tu casa
+      description: 
+      score: 45
+    - name: Recoge las botellas
+      description: 
+      score: 45
+    - name: Echa las botellas en el envase de reciclaje
+      description: 
+      score: 45
+    achievements: 
+  - m_name: Apaga las luces
+    m_id: 0
+    m_categories: []
+    description: Apagar las luces de los cuartos que no estas utilizando sirve para
+      ahorrar energia.
+    tasks:
+    - name: Revisa los cuartos que no uses
+      description: 
+      score: 45
+    - name: Apaga las luces de estos cuartos
+      description: 
+      score: 45
+    achievements: 
+  - m_name: Desconectar electrodomesticos
+    m_id: 0
+    m_categories: []
+    description: Desconectar los electrodomesticos que no esten siendo utilizados
+      ayuda a contribuir con el ahorro de energia.
+    tasks:
+    - name: Busca electrodomesticos que no utilizes
+      description: 
+      score: 45
+    - name: Desenchufa los electrodomesticos
+      description: 
+      score: 45
+    achievements: 
+  - m_name: Sembrar arboles
+    m_id: 0
+    m_categories: []
+    description: Sembrar arboles ayuda a contribuir con el medio ambiente y a disminuir
+      los efectos de la tala de arboles.
+    tasks:
+    - name: Busca las semillas de arboles
+      description: 
+      score: 45
+    - name: Ve a tu jardin
+      description: 
+      score: 45
+    - name: Planta las semillas de arbol
+      description: 
+      score: 45
+    achievements: 
+  - m_name: Cuidado forestal
+    m_id: 0
+    m_categories: []
+    description: Sembrar arboles ayuda a contribuir con el medio ambiente y a disminuir
+      los efectos de la tala de arboles.
+    tasks:
+    - name: Busca las semillas de arboles
+      description: 
+      score: 45
+    - name: Ve a tu jardin
+      description: 
+      score: 45
+    - name: Planta las semillas de arbol
+      description: 
+      score: 45
     achievements: 
