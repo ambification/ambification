@@ -31,6 +31,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/__Project Assets/Scenes/Sebastian/Game.unity
     guid: 38ba8836db4a7f04e962b184dd6248db
+  - enabled: 1
+    path: Assets/__Project Assets/Scenes/Levels/Learning Path/Learning Path.unity
+    guid: 09eca155a31856d42876ca3d247f04b9
+  - enabled: 1
+    path: Assets/__Project Assets/Scenes/Levels/Learning Path/TestSceneToLoad.unity
+    guid: 4299e3e3ad1708e4f8d39e659170dc41
+  - enabled: 1
+    path: Assets/__Project Assets/Scenes/Levels/Achievement/Achievement.unity
+    guid: 3349ece597382534bad2ae7a3f2c4885
+  - enabled: 1
+    path: Assets/__Project Assets/Scenes/Levels/Credits Logic/CreditsScene.unity
+    guid: 76cb7a5df84e7cd45b284fd713f53951
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: f895e645e98231e4da25ca85aa98a8b0,
       type: 2}
