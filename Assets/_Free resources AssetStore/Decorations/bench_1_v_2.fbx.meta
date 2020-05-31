@@ -21,7 +21,17 @@ ModelImporter:
   - first:
       95: 9500000
     second: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blue_3
+    second: {fileID: 2100000, guid: 00e17528ef0941d4288a34f4b040bd2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gray
+    second: {fileID: 2100000, guid: 378c0501885d5c64e9aee039cf019be6, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -52,7 +62,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.01
+    globalScale: 0.05
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -98,7 +108,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.01
+    globalScale: 0.05
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
