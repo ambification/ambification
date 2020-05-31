@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: CreditsLogic Scenes_SO
   m_EditorClassIdentifier: 
   m_elements:
-    array: []
+    array:
+    - sceneAsset: {fileID: 102900000, guid: 76cb7a5df84e7cd45b284fd713f53951, type: 3}
+      scenePath: Assets/__Project Assets/Scenes/Levels/Credits Logic/CreditsScene.unity
+      sceneBuildIndex: 6
+      sceneName: CreditsScene

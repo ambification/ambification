@@ -3161,6 +3161,7 @@ GameObject:
   - component: {fileID: 670733012}
   - component: {fileID: 670733011}
   - component: {fileID: 670733010}
+  - component: {fileID: 670733014}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3254,6 +3255,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &670733014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670733009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 673764c08797d6040a29f390bb042f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _useLoadingScreen: 0
 --- !u!1 &690933988
 GameObject:
   m_ObjectHideFlags: 0
@@ -6983,7 +6997,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.5, y: -112.7}
+  m_AnchoredPosition: {x: -0.000005722, y: -117.2}
   m_SizeDelta: {x: 245.22354, y: 37.05079}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1345669330
@@ -7075,7 +7089,18 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1345669330}
+        m_MethodName: SetPlayerName
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9058,6 +9083,7 @@ GameObject:
   - component: {fileID: 1721284988}
   - component: {fileID: 1721284987}
   - component: {fileID: 1721284989}
+  - component: {fileID: 1721284990}
   m_Layer: 5
   m_Name: Login_Panel
   m_TagString: Untagged
@@ -9149,7 +9175,95 @@ MonoBehaviour:
   _authenticateAtStart: 0
   _connectToChatWhenAuthenticated: 0
   _onAllLoginComplete:
-    _PersistentCalls: []
+    _PersistentCalls:
+    - _Target: {fileID: 1721284990}
+      _MethodName: Log
+      _PersistentArguments:
+      - _Type: 2
+        _Int: 0
+        _String: Authentication Completed (x2)
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 1721284989}
+      _MethodName: ChangeSceneToLoad
+      _PersistentArguments:
+      - _Type: 4
+        _Int: 1
+        _String: d4160.GameFramework.LevelType, d4160.GameFramework, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 3
+        _Int: 1
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 3
+        _Int: 1
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+    - _Target: {fileID: 670733014}
+      _MethodName: LoadAfterUnloadLevel
+      _PersistentArguments:
+      - _Type: 4
+        _Int: 1
+        _String: d4160.GameFramework.LevelType, d4160.GameFramework, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 3
+        _Int: 1
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 4
+        _Int: 1
+        _String: d4160.GameFramework.LevelType, d4160.GameFramework, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 3
+        _Int: 1
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+--- !u!114 &1721284990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721284985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffcdf587775c97479a575210167587a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1725263869
 GameObject:
   m_ObjectHideFlags: 0

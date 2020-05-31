@@ -4143,7 +4143,7 @@ MonoBehaviour:
     worldScene: 0
   m_levelScene:
     levelCategory: 2
-    levelScene: 0
+    levelScene: 1
 --- !u!1 &818618148
 GameObject:
   m_ObjectHideFlags: 0
@@ -4330,6 +4330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 917758773}
   - component: {fileID: 917758772}
+  - component: {fileID: 917758774}
   m_Layer: 0
   m_Name: '[Authenticator]'
   m_TagString: Untagged
@@ -4353,7 +4354,7 @@ MonoBehaviour:
   m_allowOverrideAuthentication: 0
   m_remotePersistenceType: 1
   m_useDeviceUniqueIdentifier: 1
-  m_multiplayerAuthentication: 1
+  m_multiplayerAuthentication: 0
   m_chatAuthentication: 1
   m_username: TestUser
   m_authenticateAtStart: 0
@@ -4371,8 +4372,30 @@ MonoBehaviour:
     - _Target: {fileID: 2064512343}
       _MethodName: CreateDataPersistenceAndInitialize
       _PersistentArguments: []
+    - _Target: {fileID: 917758774}
+      _MethodName: Log
+      _PersistentArguments:
+      - _Type: 2
+        _Int: 0
+        _String: Authentication Completed
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
   m_onLoginFailed:
-    _PersistentCalls: []
+    _PersistentCalls:
+    - _Target: {fileID: 917758774}
+      _MethodName: Log
+      _PersistentArguments:
+      - _Type: 2
+        _Int: 0
+        _String: Authentication Error
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
 --- !u!4 &917758773
 Transform:
   m_ObjectHideFlags: 0
@@ -4387,6 +4410,18 @@ Transform:
   m_Father: {fileID: 554397440}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &917758774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917758771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ffcdf587775c97479a575210167587a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &918722086
 GameObject:
   m_ObjectHideFlags: 0
@@ -7328,9 +7363,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8af1b6e1aaa2944eb2eb192c9e07d50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_startLevelAtStart: 0
-  m_levelTypeToStart: 2
-  m_generalLevelToStart: 0
+  m_startLevelAtStart: 1
+  m_levelTypeToStart: 1
+  m_generalLevelToStart: 1
   m_gameModeLevelToStart: 0
   m_levelLaunchers:
     array:

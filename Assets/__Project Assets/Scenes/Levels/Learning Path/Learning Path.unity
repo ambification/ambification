@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: cc3476552e7510f4f8319414615e7a7f,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -427,7 +427,6 @@ GameObject:
   - component: {fileID: 217575500}
   - component: {fileID: 217575501}
   - component: {fileID: 217575502}
-  - component: {fileID: 217575503}
   m_Layer: 0
   m_Name: First Level Trigger
   m_TagString: Untagged
@@ -457,7 +456,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217575499}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.048595786, z: 0.07817316}
@@ -471,24 +470,53 @@ MonoBehaviour:
   m_GameObject: {fileID: 217575499}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7390879e98af53441a49e5754076f331, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e19a1d2256ec074eb548ae2ab43143a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missionSceneName: TestSceneToLoad
-  loadScene: 0
---- !u!114 &217575503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 217575499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9b5266f85513d94fb67811a59d6fddb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loadMissionLevelScript: {fileID: 217575502}
+  _tag: Player
+  _layerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  _checkAttachedRigidbody: 0
+  _TriggerEnterEvent:
+    _PersistentCalls:
+    - _Target: {fileID: 1191497302}
+      _MethodName: UnloadAfterLoadLevel
+      _PersistentArguments:
+      - _Type: 4
+        _Int: 2
+        _String: d4160.GameFramework.LevelType, d4160.GameFramework, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 3
+        _Int: 0
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 4
+        _Int: 1
+        _String: d4160.GameFramework.LevelType, d4160.GameFramework, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
+      - _Type: 3
+        _Int: 1
+        _String: 
+        _X: 0
+        _Y: 0
+        _Z: 0
+        _W: 0
+        _Object: {fileID: 0}
 --- !u!1 &229561163 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2636231005250374737, guid: 018c65e7e5a7ec243a9edc0e01a452ac,
@@ -2353,6 +2381,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 791457111}
+  animator: {fileID: 0}
+  moveIndicator: {fileID: 0}
 --- !u!195 &791457111
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3113,6 +3143,7 @@ GameObject:
   - component: {fileID: 1191497300}
   - component: {fileID: 1191497299}
   - component: {fileID: 1191497298}
+  - component: {fileID: 1191497302}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -3216,6 +3247,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1191497302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191497297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 673764c08797d6040a29f390bb042f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _useLoadingScreen: 0
 --- !u!1 &1227627050
 GameObject:
   m_ObjectHideFlags: 0
@@ -5187,7 +5231,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1886270063}
-  - component: {fileID: 1886270062}
   m_Layer: 0
   m_Name: PlayerParent
   m_TagString: Untagged
@@ -5195,25 +5238,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &1886270062
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1886270061}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3f7ba6ffe3b890643ae162e8c52a8cd6, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1886270063
 Transform:
   m_ObjectHideFlags: 0
@@ -5561,6 +5585,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.00000012073723
       objectReference: {fileID: 0}
+    - target: {fileID: 9517276, guid: 907fd825e3988774caab4234b943bf44, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 37c1567d16699c74d81604514c5be85f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 907fd825e3988774caab4234b943bf44, type: 3}
 --- !u!1 &1925192584

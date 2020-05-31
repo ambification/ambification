@@ -16,22 +16,29 @@ MonoBehaviour:
     array:
     - m_name: BootLoader
       m_id: 1
+      m_categories: []
       m_scenesSO: {fileID: 11400000, guid: fcd9389600f063b44829ff8063e142e9, type: 2}
     - m_name: LoadingScreenLogic
       m_id: 2
+      m_categories: []
       m_scenesSO: {fileID: 11400000, guid: 38e4b21f1f636bb46be2425e9ae2af66, type: 2}
     - m_name: MenuLogic
       m_id: 3
+      m_categories: []
       m_scenesSO: {fileID: 11400000, guid: ade33c65669c1c84596d49208585d3b0, type: 2}
     - m_name: CreditsLogic
       m_id: 4
+      m_categories: []
       m_scenesSO: {fileID: 11400000, guid: d6f5dac81c192b2418089140befc0342, type: 2}
     - m_name: World
       m_id: 5
+      m_categories: []
       m_scenesSO: {fileID: 11400000, guid: c4b8f54deb5d7834ab89ed7a00562b0f, type: 2}
     - m_name: CinematicsLogic
       m_id: 6
+      m_categories: []
       m_scenesSO: {fileID: 11400000, guid: a2400b2387f074c4caf64c82fc130a85, type: 2}
     - m_name: PlayLogic
       m_id: 7
+      m_categories: []
       m_scenesSO: {fileID: 11400000, guid: 3b6c212694daffe4a90115960a052dce, type: 2}

@@ -5,9 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/__Project Assets/Scenes/Levels/Boot Loader/BootLoader.unity
     guid: eb1615703268be049a09b59844a7ed6a
+  - enabled: 1
+    path: Assets/__Project Assets/Scenes/Sebastian/BGScreen.unity
+    guid: 11038f7c099455d46a99b1668007eba7
+  - enabled: 1
+    path: Assets/__Project Assets/Scenes/Sebastian/Menu.unity
+    guid: 38ba8836db4a7f04e962b184dd6248db
+  - enabled: 1
+    path: Assets/__Project Assets/Scenes/Levels/Learning Path/Learning Path.unity
+    guid: 09eca155a31856d42876ca3d247f04b9
+  - enabled: 1
+    path: Assets/__Project Assets/Scenes/Game Modes/Singleplayer Mode/Plays/Level
+      1.unity
+    guid: 48c18c9579ceb8a45ab27947f88127d2
+  - enabled: 1
+    path: Assets/__Project Assets/Scenes/Levels/Achievement/Achievement.unity
+    guid: 3349ece597382534bad2ae7a3f2c4885
+  - enabled: 1
+    path: Assets/__Project Assets/Scenes/Levels/Credits Logic/CreditsScene.unity
+    guid: 76cb7a5df84e7cd45b284fd713f53951
   - enabled: 0
     path: Assets/__Project Assets/Scenes/Levels/LoadingScreen Logic/MainLoadingScreen.unity
     guid: 6b31626b7c8bedb498cf51f48a0115eb
@@ -19,30 +38,14 @@ EditorBuildSettings:
       Mode - MainPlayScene.unity
     guid: 14125abe4b75e664cb71e2319a7a34ac
   - enabled: 0
-    path: Assets/__Project Assets/Scenes/Game Modes/Singleplayer Mode/Plays/Level
-      1.unity
-    guid: 48c18c9579ceb8a45ab27947f88127d2
-  - enabled: 1
     path: Assets/__Project Assets/Scenes/Sebastian/Persistent.unity
     guid: a908012fc4757d8489f23b7727cef993
-  - enabled: 1
+  - enabled: 0
     path: Assets/__Project Assets/Scenes/Sebastian/MenuScreen.unity
     guid: 4dcbface0d4a35744bc1cf2d32c18ea8
-  - enabled: 1
-    path: Assets/__Project Assets/Scenes/Sebastian/Game.unity
-    guid: 38ba8836db4a7f04e962b184dd6248db
-  - enabled: 1
-    path: Assets/__Project Assets/Scenes/Levels/Learning Path/Learning Path.unity
-    guid: 09eca155a31856d42876ca3d247f04b9
-  - enabled: 1
+  - enabled: 0
     path: Assets/__Project Assets/Scenes/Levels/Learning Path/TestSceneToLoad.unity
     guid: 4299e3e3ad1708e4f8d39e659170dc41
-  - enabled: 1
-    path: Assets/__Project Assets/Scenes/Levels/Achievement/Achievement.unity
-    guid: 3349ece597382534bad2ae7a3f2c4885
-  - enabled: 1
-    path: Assets/__Project Assets/Scenes/Levels/Credits Logic/CreditsScene.unity
-    guid: 76cb7a5df84e7cd45b284fd713f53951
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: f895e645e98231e4da25ca85aa98a8b0,
       type: 2}

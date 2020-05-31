@@ -106,10 +106,6 @@
       "revision": "HEAD",
       "hash": "0c901548e0f8fc3caaf992e7685883acad986b50"
     },
-    "d4160.game-framework": {
-      "revision": "HEAD",
-      "hash": "5fe27cbc081aef4fe9c3efa2fa6f1b5be3d18d52"
-    },
     "d4160.game-framework-core": {
       "revision": "HEAD",
       "hash": "cc05230ddc60e1d85e8f6a5c4b35ff22937e97b1"

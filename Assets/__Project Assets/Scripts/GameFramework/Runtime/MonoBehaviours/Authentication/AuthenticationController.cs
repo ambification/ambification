@@ -6,6 +6,7 @@ namespace GameFramework
     using System;
     using UnityEngine;
     using TMPro;
+    using d4160.GameFramework;
 
     public class AuthenticationController : MonoBehaviour
     {
@@ -101,6 +102,23 @@ namespace GameFramework
         {
             // Since all share the same authenticator
             DataManager.Instance.GameData.Authenticator.AllowOverrideAuthentication = setValue;
+        }
+
+        public void ChangeSceneToLoad(LevelType levelType, int levelIndex, int sceneIndex)
+        {
+            switch (levelType)
+            {
+                case LevelType.None:
+                    break;
+                case LevelType.General:
+                    var levelLauncher = GameManager.Instance.GetLevelLauncher<DefaultLevelLauncher>(levelIndex);
+                    levelLauncher.ChangeLevelScene(sceneIndex);
+                    break;
+                case LevelType.GameMode:
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_elements:
     array:
-    - sceneAsset: {fileID: 102900000, guid: cd54a61ea83bf8344a06fb6e5e5f8e35, type: 3}
-      scenePath: Assets/__Project Assets/Scenes/Levels/Menu Logic/MainMenu.unity
+    - sceneAsset: {fileID: 102900000, guid: 38ba8836db4a7f04e962b184dd6248db, type: 3}
+      scenePath: Assets/__Project Assets/Scenes/Sebastian/Menu.unity
       sceneBuildIndex: 2
-      sceneName: MainMenu
+      sceneName: Menu
+    - sceneAsset: {fileID: 102900000, guid: 09eca155a31856d42876ca3d247f04b9, type: 3}
+      scenePath: Assets/__Project Assets/Scenes/Levels/Learning Path/Learning Path.unity
+      sceneBuildIndex: 3
+      sceneName: Learning Path

@@ -37,21 +37,27 @@ public class PlayerMovementWithClick : MonoBehaviour
                 {
                     _previousSelected.GetComponent<OptionalBoolEventHolder>().Invoke(false);
 
-                    moveIndicator.gameObject.SetActive(true);
-                    moveIndicator.position = hit.point + Vector3.up * 0.025f;
-                    moveIndicator.rotation = Quaternion.FromToRotation(-Vector3.forward, hit.normal);
+                    moveIndicator?.gameObject.SetActive(true);
+                    if (moveIndicator)
+                    {
+                        moveIndicator.position = hit.point + Vector3.up * 0.025f;
+                        moveIndicator.rotation = Quaternion.FromToRotation(-Vector3.forward, hit.normal);
 
-                    StopCoroutine(DisableMarker());
-                    StartCoroutine(DisableMarker());
+                        StopCoroutine(DisableMarker());
+                        StartCoroutine(DisableMarker());
+                    }
                 }
                 else
                 {
-                    moveIndicator.position = hit.point + Vector3.up * 0.025f;
-                    moveIndicator.rotation = Quaternion.FromToRotation(-Vector3.forward, hit.normal);
-                    moveIndicator.gameObject.SetActive(true);
+                    if (moveIndicator)
+                    {
+                        moveIndicator.position = hit.point + Vector3.up * 0.025f;
+                        moveIndicator.rotation = Quaternion.FromToRotation(-Vector3.forward, hit.normal);
+                        moveIndicator.gameObject.SetActive(true);
 
-                    StopCoroutine(DisableMarker());
-                    StartCoroutine(DisableMarker());
+                        StopCoroutine(DisableMarker());
+                        StartCoroutine(DisableMarker());
+                    }
                 }
 
                 agent.SetDestination(hit.point);
