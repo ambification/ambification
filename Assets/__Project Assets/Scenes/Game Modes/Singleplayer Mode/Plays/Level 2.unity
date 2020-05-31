@@ -3183,141 +3183,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 104376, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 106658, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 107390, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 108732, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 108764, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 108846, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 114904, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 127062, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 127396, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 127396, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 128200, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 137156, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 141074, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 144948, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 152208, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 154018, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 154618, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 155402, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 155528, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 155938, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 162168, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
       propertyPath: m_Name
       value: TT_demo_female
-      objectReference: {fileID: 0}
-    - target: {fileID: 162168, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 165934, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 174296, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 177914, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 178188, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 178640, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 180774, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 183478, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 187916, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 191234, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 192896, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 194952, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 199378, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 494844, guid: 2db03e7c8a8135146b280e5da7e0289c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5939,9 +5807,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cuidar del medio ambientes una de las medidas m\xE1s importantes que podemos
-    tomar para poder mantener el medio en el que vivimos y muchos otros seres vivientes
-    tambien!"
+  m_text: "Cuidar del medio ambiente es una de las medidas m\xE1s importantes que
+    podemos tomar para poder mantener el medio en el que vivimos y \xA1muchos otros
+    seres vivientes tambien!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d2d8097c9efaf544811b05528da0243, type: 2}
   m_sharedMaterial: {fileID: 465674926465712100, guid: 8d2d8097c9efaf544811b05528da0243,
@@ -6011,10 +5879,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 494633925}
-    characterCount: 166
+    characterCount: 169
     spriteCount: 0
-    spaceCount: 27
-    wordCount: 28
+    spaceCount: 28
+    wordCount: 29
     linkCount: 0
     lineCount: 5
     pageCount: 1
@@ -6261,7 +6129,7 @@ MonoBehaviour:
         _Y: 0
         _Z: 0
         _W: 0
-        _Object: {fileID: 8300000, guid: 70e02441ad3cd8f488092b6a4933e446, type: 3}
+        _Object: {fileID: 8300000, guid: 1ccc3cc774ec3bb408b02386912aaa4f, type: 3}
 --- !u!1 &505193830
 GameObject:
   m_ObjectHideFlags: 0
@@ -8677,7 +8545,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772039327}
-  m_LocalRotation: {x: 0.28187278, y: -0.3378698, z: 0.10681295, w: 0.8916181}
+  m_LocalRotation: {x: 0.28187275, y: -0.33786976, z: 0.10681293, w: 0.8916181}
   m_LocalPosition: {x: 3.1352468, y: 1.6933185, z: -3.1215506}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -9534,6 +9402,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1543380108}
+        m_MethodName: PlayOneShot
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 65c6b9d4bab84b2469ee7978d75831d1,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -17286,7 +17166,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687258581}
-  m_LocalRotation: {x: 0.28187278, y: -0.3378698, z: 0.10681295, w: 0.8916181}
+  m_LocalRotation: {x: 0.28187275, y: -0.33786976, z: 0.10681293, w: 0.8916181}
   m_LocalPosition: {x: 3.1352468, y: 1.6933185, z: -3.1215506}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -17373,7 +17253,7 @@ MonoBehaviour:
       m_Calls: []
 --- !u!1 &1692988316
 GameObject:
-  m_ObjectHideFlags: 16
+  m_ObjectHideFlags: 17
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -17390,7 +17270,7 @@ GameObject:
   m_IsActive: 1
 --- !u!114 &1692988317
 MonoBehaviour:
-  m_ObjectHideFlags: 16
+  m_ObjectHideFlags: 17
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -17408,7 +17288,7 @@ MonoBehaviour:
     separatorHColor: 9
 --- !u!4 &1692988318
 Transform:
-  m_ObjectHideFlags: 16
+  m_ObjectHideFlags: 17
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
