@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7c97d4365870bf4cad91cc7ea8de8d1, type: 3}
+  m_Name: New Quests SO
+  m_EditorClassIdentifier: 
+  achievementsSO: {fileID: 11400000, guid: e51d9c558f7954346b69339b556c5c9c, type: 2}
+  quests:
+  - m_name: Manos limpias
+    m_id: 0
+    m_categories: []
+    tasks:
+    - name: Recolectar agua
+      description: 
+      score: 10
+    achievements: 
