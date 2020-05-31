@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_elements:
     array:
-    - sceneAsset: {fileID: 102900000, guid: 11038f7c099455d46a99b1668007eba7, type: 3}
-      scenePath: Assets/__Project Assets/Scenes/Sebastian/BGScreen.unity
-      sceneBuildIndex: 1
-      sceneName: BGScreen
+    - sceneAsset: {fileID: 102900000, guid: 9c1b51f070a0e7f46a23b6d105f9f6c9, type: 3}
+      scenePath: Assets/__Project Assets/Scenes/Levels/LoadingScreen Logic/LoadingScreenRecomendation.unity
+      sceneBuildIndex: -1
+      sceneName: LoadingScreenRecomendation

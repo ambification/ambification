@@ -30,6 +30,8 @@ public class QuizGameController : MonoBehaviour
 
     public int PlayerScore => _testScore + _missionScore;
 
+    public int TestScore => _testScore;
+
     public int MissionScore {
         get => _missionScore;
         set => _missionScore = value;
