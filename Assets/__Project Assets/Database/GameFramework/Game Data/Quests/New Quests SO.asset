@@ -17,8 +17,15 @@ MonoBehaviour:
   - m_name: Manos limpias
     m_id: 0
     m_categories: []
+    description: 
     tasks:
-    - name: Recolectar agua
+    - name: "Buscar un jab\xF3n"
+      description: 
+      score: 15
+    - name: Ir al lavado
+      description: 
+      score: 10
+    - name: Ir al lavado
       description: 
       score: 10
     achievements: 

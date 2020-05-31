@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/__Project Assets/Database/GameFramework/Game Data/Quests.meta
 guid: 6e3daa79b921980439ebfa0d32f03c28
 folderAsset: yes
+=======
+guid: 63b130a7e208db64d82a88de6ed852d8
+>>>>>>> 612ff8ed6382e7a7594a63caafd8ae424975e3f0:Assets/__Project Assets/Scenes/Sebastian/MisionWorld.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
