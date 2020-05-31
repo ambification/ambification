@@ -63,6 +63,7 @@ public class QuizGameController : MonoBehaviour
         {
             GameObject answerButtonGameObject = answerButtonObjectPool.GetObject();
             answerButtonGameObject.transform.SetParent(answerButtonParent);
+            answerButtonGameObject.transform.localScale = Vector3.one;
             answerButtonGameObjects.Add(answerButtonGameObject);
             AnswerButton answerButton = answerButtonGameObject.GetComponent<AnswerButton>();
             answerButton.SetUp(questionData.answers[i]);
