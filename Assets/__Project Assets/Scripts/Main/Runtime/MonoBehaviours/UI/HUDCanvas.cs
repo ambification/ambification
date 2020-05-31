@@ -12,14 +12,20 @@ public class HUDCanvas : CanvasBase, IMultipleStatUpgradeable
 {
     public QuestBehaviour quest;
     public TextMeshProUGUI timeText;
+    public TextMeshProUGUI scoreText;
     public TextMeshProUGUI missionTitle;
     public TaskUI[] tasksUI;
 
     private float _time;
+    private bool _timerActived;
+
+    public string TimeString => $"Time: {((int)_time / 60).ToZeroFormattedString()}:{((int)_time % 60).ToZeroFormattedString()}";
 
     protected override void Start()
     {
         base.Start();
+
+        _timerActived = true;
 
         missionTitle.text = quest.SelectedQuest.Name;
 
@@ -40,14 +46,21 @@ public class HUDCanvas : CanvasBase, IMultipleStatUpgradeable
 
     private void Update()
     {
+        if (!_timerActived) return;
+
         _time += Time.deltaTime;
 
-        timeText.text = $"Time: {((int)_time / 60).ToZeroFormattedString()}:{((int)_time % 60).ToZeroFormattedString()}";
+        timeText.text = TimeString;
+    }
+
+    public void SetTimerActive(bool active)
+    {
+        _timerActived = active;
     }
 
     public void UpdateStat(int index, float value)
     {
-        
+        scoreText.text = $"Score: {(int)value}";
     }
 
     public void UpdateTaskValue(bool completedState, int index)

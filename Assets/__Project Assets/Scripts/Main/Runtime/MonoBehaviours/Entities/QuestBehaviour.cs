@@ -23,11 +23,14 @@ public class QuestBehaviour : MonoBehaviour
     [SerializeField] private bool[] _unlockedAchievementTracking;
 
     public UltEvent onTaskValueChanged;
+    public UltEvents.UltEvent onQuestCompleted;
 
     public bool[] DoneTaskTracking => _doneTaskTracking;
     public bool[] UnlockedAchievementTracking => _unlockedAchievementTracking;
 
     public Task GetSelectedTask(int idx) => SelectedQuest.tasks[idx];
+
+    public int GetTaskScore(int idx) => GetSelectedTask(idx).score;
 
     private void Awake()
     {
@@ -43,6 +46,8 @@ public class QuestBehaviour : MonoBehaviour
 
             onTaskValueChanged?.Invoke(val, index);
         }
+
+        CheckCompleteQuest();
     }
 
     public void UnlockAchievement(bool val, int index = 0)
@@ -64,6 +69,9 @@ public class QuestBehaviour : MonoBehaviour
                 break;
             }
         }
+
+        if (completed)
+            onQuestCompleted?.Invoke();
 
         return completed;
     }

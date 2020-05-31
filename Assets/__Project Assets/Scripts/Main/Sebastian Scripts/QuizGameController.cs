@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UltEvents;
 using UnityEngine;
 
 public class QuizGameController : MonoBehaviour
@@ -13,23 +14,35 @@ public class QuizGameController : MonoBehaviour
     public GameObject questionDisplay;
     public GameObject roundEndDisplay;
 
+    public UltEvent onEndRound;
+
     private DataController _dataController;
     private RoundData _currentRoundData;
     private QuestionData[] _questionPool;
     private bool _isRoundActive;
-    private float _timeRemaining;
+    //private float _timeRemaining;
     private int _questionIndex;
     private int _playerScore;
+    private int _testScore;
+    private int _missionScore;
+
     private List<GameObject> answerButtonGameObjects = new List<GameObject>();
+
+    public int PlayerScore => _testScore + _missionScore;
+
+    public int MissionScore {
+        get => _missionScore;
+        set => _missionScore = value;
+    }
 
     private void Start()
     {
         _dataController = FindObjectOfType<DataController>();
         _currentRoundData = _dataController.GetCourrentRoundData();
         _questionPool = _currentRoundData.question;
-        _timeRemaining = _currentRoundData.timeLimitInSeconds;
+        //_timeRemaining = _currentRoundData.timeLimitInSeconds;
 
-        _playerScore = 0;
+        _testScore = 0;
         _questionIndex = 0;
         
         ShowQuestion();
@@ -58,8 +71,8 @@ public class QuizGameController : MonoBehaviour
     {
         if (isCorrect)
         {
-            _playerScore += _currentRoundData.pointAddedForCorrectAnswer;
-            scoreText.text = "Score: " + _playerScore.ToString();
+            _testScore += _currentRoundData.pointAddedForCorrectAnswer;
+            scoreText.text = "Score: " + _testScore.ToString();
         }
 
         if (_questionPool.Length > _questionIndex + 1)
@@ -78,12 +91,15 @@ public class QuizGameController : MonoBehaviour
         _isRoundActive = false;
         questionDisplay.SetActive(false);
         roundEndDisplay.SetActive(true);
+
+        onEndRound?.Invoke();
     }
 
     public void RemoveAnswerButtons()
     {
         while (answerButtonGameObjects.Count > 0)
         {
+            Destroy(answerButtonGameObjects[0]);
             answerButtonGameObjects.RemoveAt(0);
         }
     }
