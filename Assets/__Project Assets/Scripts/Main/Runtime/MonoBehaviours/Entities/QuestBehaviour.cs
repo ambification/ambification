@@ -6,6 +6,7 @@ using UnityEngine;
 using System.Linq;
 using UnityExtensions;
 using d4160.Core;
+using UltEvents;
 
 public class QuestBehaviour : MonoBehaviour
 {
@@ -21,10 +22,14 @@ public class QuestBehaviour : MonoBehaviour
     [SerializeField] private bool[] _doneTaskTracking;
     [SerializeField] private bool[] _unlockedAchievementTracking;
 
+    public UltEvent onTaskValueChanged;
+
     public bool[] DoneTaskTracking => _doneTaskTracking;
     public bool[] UnlockedAchievementTracking => _unlockedAchievementTracking;
 
-    private void Start()
+    public Task GetSelectedTask(int idx) => SelectedQuest.tasks[idx];
+
+    private void Awake()
     {
         _doneTaskTracking = new bool[SelectedQuest.tasks.Count];
         _unlockedAchievementTracking = new bool[SelectedQuest.achievements.Count];
@@ -35,6 +40,8 @@ public class QuestBehaviour : MonoBehaviour
         if (_doneTaskTracking.IsValidIndex(index))
         {
             _doneTaskTracking[index] = val;
+
+            onTaskValueChanged?.Invoke(val, index);
         }
     }
 
@@ -59,5 +66,10 @@ public class QuestBehaviour : MonoBehaviour
         }
 
         return completed;
+    }
+
+    [System.Serializable]
+    public class UltEvent : UltEvent<bool, int>
+    { 
     }
 }

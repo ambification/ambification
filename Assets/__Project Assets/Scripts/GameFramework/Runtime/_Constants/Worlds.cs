@@ -3,9 +3,8 @@ namespace GameFramework
 {
 	public static class Worlds
 	{
-		public const int World1 = 0;
 
-		public const int Total = 1;
+		public const int Total = 0;
 
 	}
 }

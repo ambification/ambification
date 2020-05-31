@@ -106,7 +106,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 0.1
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
@@ -114,13 +114,13 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.033333335
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: a6e69620cefd16945bf4b434ef7ea6c1, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 0e251167a046f8a44801aa559ae639e5, type: 2}
 --- !u!1 &47417743
 GameObject:
   m_ObjectHideFlags: 1
@@ -4352,11 +4352,11 @@ MonoBehaviour:
   m_authenticationType: 1
   m_allowOverrideAuthentication: 0
   m_remotePersistenceType: 1
-  m_useDeviceUniqueIdentifier: 0
+  m_useDeviceUniqueIdentifier: 1
   m_multiplayerAuthentication: 1
   m_chatAuthentication: 1
-  m_username: Player1
-  m_authenticateAtStart: 1
+  m_username: TestUser
+  m_authenticateAtStart: 0
   m_onLoginCompleted:
     _PersistentCalls:
     - _Target: {fileID: 855059775}
@@ -7328,7 +7328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8af1b6e1aaa2944eb2eb192c9e07d50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_startLevelAtStart: 1
+  m_startLevelAtStart: 0
   m_levelTypeToStart: 2
   m_generalLevelToStart: 0
   m_gameModeLevelToStart: 0

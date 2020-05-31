@@ -17,15 +17,17 @@ MonoBehaviour:
   - m_name: Manos limpias
     m_id: 0
     m_categories: []
-    description: 
+    description: "Mantener las manos limpias es una de las medidas m\xE1s importantes
+      que podemos tomar para evitar enfermarnos y transmitir los microbios a otras
+      personas."
     tasks:
-    - name: "Buscar un jab\xF3n"
+    - name: "Busca un jab\xF3n"
       description: 
       score: 15
     - name: Ir al lavado
       description: 
       score: 10
-    - name: Ir al lavado
+    - name: Lavarse las manos
       description: 
       score: 10
     achievements: 

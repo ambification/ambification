@@ -9,7 +9,7 @@ namespace GameFramework
 		public const int Water = 4;
 		public const int UI = 5;
 		public const int PostProcessing = 8;
-
+		public const int Selectable = 9;
 
 		public static int onlyIncluding( params int[] layers )
 		{
